@@ -4,6 +4,7 @@ import App from '#app/components/app';
 import Homepage from '#app/components/homepage';
 import Usage from '#app/components/usage';
 import NotFound from '#app/components/not-found';
+import Second from '#app/components/second';
 
 /**
  * Returns configured routes for different
@@ -28,6 +29,7 @@ export default ({store, first}) => {
   return <Route path="/" component={App}>
     <IndexRoute component={Homepage} onEnter={w(Homepage.onEnter)}/>
     <Route path="/usage" component={Usage} onEnter={w(Usage.onEnter)}/>
+    <Route path="/second" component={Second} onEnter={w(Second.onEnter)}/>
     {/* Server redirect in action */}
     <Redirect from="/docs" to="/usage" />
     <Route path="*" component={NotFound} onEnter={w(NotFound.onEnter)}/>

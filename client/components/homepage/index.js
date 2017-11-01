@@ -22,13 +22,9 @@ export default class Homepage extends Component {
           }
         ]} />
       <h1 className={example}>
-        Hot Reloadable <br />
-        Golang + React + Redux + Css-Modules
-        <br />Isomorphic Starter Kit</h1>
+     Hello, World! <br />
+     ksonnet-site</h1>
       <br />
-      <p className={p}>
-        Please take a look at <Link className={link} to='/docs'>usage</Link> page.
-      </p>
     </div>;
   }
 
